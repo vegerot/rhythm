@@ -76,6 +76,7 @@ void cli_init(void) {
 void cli_cleanup(void) {
     printf("\033[?25h");
     printf("\033[2J\033[H");
+    printf("\e[?10491");
     printf(RESET);
     fflush(stdout);
 }

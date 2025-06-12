@@ -91,6 +91,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    printf("\e[?1049h");
     while (1) {
         cli_display_status(player, playlist);
         int input_result = cli_handle_input(player, playlist);
